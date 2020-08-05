@@ -23,7 +23,7 @@ public class CameraMovement : MonoBehaviour
         if (Input.GetKey(KeyCode.W))
         {
             transVelUp = transVelUp + transAccel;
-            gameObject.transform.Translate(0, 0, transVelUp);
+            gameObject.transform.Translate(0, transVelUp, 0);
         }
         else
         {
@@ -32,7 +32,7 @@ public class CameraMovement : MonoBehaviour
         if (Input.GetKey(KeyCode.S))
         {
             transVelDown = transVelDown - transAccel;
-            gameObject.transform.Translate(0, 0, transVelDown);
+            gameObject.transform.Translate(0, transVelDown, 0);
 
         }
         else

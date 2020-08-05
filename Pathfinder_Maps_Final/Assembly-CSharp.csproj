@@ -653,11 +653,11 @@
     <Reference Include="Unity.TextMeshPro">
       <HintPath>C:/Users/Justin/Unity Projects/Pathfinder/Pathfinder_Maps_Final/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
     </Reference>
-    <Reference Include="UnityEditor.UI">
-      <HintPath>C:/Users/Justin/Unity Projects/Pathfinder/Pathfinder_Maps_Final/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
-    </Reference>
     <Reference Include="Unity.Performance.Profile-Analyzer.Editor">
       <HintPath>C:/Users/Justin/Unity Projects/Pathfinder/Pathfinder_Maps_Final/Library/ScriptAssemblies/Unity.Performance.Profile-Analyzer.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.UI">
+      <HintPath>C:/Users/Justin/Unity Projects/Pathfinder/Pathfinder_Maps_Final/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup></ItemGroup>

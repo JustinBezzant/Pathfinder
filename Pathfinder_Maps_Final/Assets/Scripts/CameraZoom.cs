@@ -25,20 +25,21 @@ public class CameraZoom : MonoBehaviour
             cameraMove = new Vector3((mousePos.x + transform.position.x) / 2, (mousePos.y + transform.position.y) / 2, (maxZoom + transform.position.z) / 2);
             transform.Translate(cameraMove);
         }*/
-        if (Input.mouseScrollDelta.y > 0)
+        if (Input.mouseScrollDelta.y < 0)
         {
+            Debug.Log("hi");
             cameraMove = -1f * scrollSpeed;
-            if (transform.position.z > maxZoom)
-            {
-                transform.Translate(new Vector3(0, -1 * scrollSpeed, 0));
-            }
-        }
-        else if (Input.mouseScrollDelta.y < 0)
-        {
-            cameraMove = scrollSpeed;
             if (transform.position.z < maxZoomOut)
             {
-                transform.Translate(new Vector3(0, scrollSpeed, 0));
+                transform.Translate(new Vector3(0, 0, -1 * scrollSpeed));
+            }
+        }
+        else if (Input.mouseScrollDelta.y > 0)
+        {
+            cameraMove = scrollSpeed;
+            if (transform.position.z > maxZoom)
+            {
+                transform.Translate(new Vector3(0, 0, scrollSpeed));
             }
         }
     }
